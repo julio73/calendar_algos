@@ -19,6 +19,8 @@ def getTimeBound(bound_tuples):
             time_bound[0] = bound[0]
         if time_bound[1] > bound[1]:
             time_bound[1] = bound[1]
+    if (time_bound[0] > time_bound[1]) or (time_bound[0] > time_bound[1]):
+        return None
     return time_bound
 
 if __name__ == "__main__":
