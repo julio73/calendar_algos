@@ -32,7 +32,7 @@ def getTimeParts(time_string):
 
 def getTimeDifference(time_string_a, time_string_b):
     if time_string_a == time_string_b:
-        return 0
+        return (0, 0)
     else:
         hour_a, minute_a = getTimeParts(time_string_a)
         hour_b, minute_b = getTimeParts(time_string_b)
