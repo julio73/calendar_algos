@@ -23,5 +23,16 @@ def getTimeBound(bound_tuples):
         return None
     return time_bound
 
+# - Time passed in military hour as a string
+#   - Convert it to integer for comparison
+#   - Convert back for output
+def getTimeParts(time_string):
+    hour, minute = map(int, time_string.split(':'))
+    return (hour, minute)
+
+
+
+
+
 if __name__ == "__main__":
     pass
